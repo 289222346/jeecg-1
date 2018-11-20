@@ -1,7 +1,7 @@
 JEECG 微云快速开发平台
 ===============
 
-当前最新版本： 3.7.8（发布日期：20180806）
+当前最新版本： 3.8（发布日期：20181024）
 
 JEECG微服务架构： [jeecg-p3 1.0版](https://gitee.com/jeecg/jeecg-p3)
 
@@ -101,6 +101,10 @@ JEECG 功能特点
 * [非Maven版本下载](https://github.com/zhangdaiscott/jeecg-nomaven)
 * [JEECG 版本日志](http://www.jeecg.org/forum.php?mod=viewthread&tid=365&extra=page%3D1)
 
+工程说明
+-----------------------------------
+* 关于项目插件打包使用说明：
+一些不常变动的插件，例如My97DatePicker，lhgDialog等组件，为提高项目加载效率，打包成jar项目引用加载，如需要更改相关插件源码，可下载工程[https://gitee.com/jeecg/jeecg-common-plugin-ui](https://gitee.com/jeecg/jeecg-common-plugin-ui)引入
     
 技术交流
 -----------------------------------

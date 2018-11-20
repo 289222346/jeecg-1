@@ -51,6 +51,7 @@ import org.jeecgframework.core.util.PropertiesUtil;
 import org.jeecgframework.core.util.ResourceUtil;
 import org.jeecgframework.core.util.SetListSort;
 import org.jeecgframework.core.util.StringUtil;
+import org.jeecgframework.core.util.UrlCheckUtil;
 import org.jeecgframework.core.util.YouBianCodeUtil;
 import org.jeecgframework.core.util.oConvertUtils;
 import org.jeecgframework.tag.core.easyui.TagUtil;
@@ -773,7 +774,7 @@ public class SystemController extends BaseController {
 			sb.append(" and  org_code like '").append(parentCode).append("%'");
 		} else {
 
-			sb.append(" and LEFT(org_code,1)='A'");
+			//sb.append(" and LEFT(org_code,1)='A'");
 
 		}
 
@@ -1755,6 +1756,11 @@ public class SystemController extends BaseController {
 		String ctxPath = request.getSession().getServletContext().getRealPath("/");
 		String dbpath = request.getParameter("filePath");
 		String downLoadPath = ctxPath + dbpath;
+
+		if(UrlCheckUtil.checkUrl(downLoadPath)){
+			return;
+		}
+
 		response.setContentType("application/x-msdownload;charset=utf-8");
 		String fileName=dbpath.substring(dbpath.lastIndexOf("/")+1);
 		String userAgent = request.getHeader("user-agent").toLowerCase();
