@@ -3,7 +3,7 @@ JEECG 微云快速开发平台
 
 当前最新版本： 3.8（发布日期：20181024）
 
-JEECG微服务架构： [jeecg-p3 1.0版](https://gitee.com/jeecg/jeecg-p3)
+JEECG推出前后端分离新版本： [jeecg-boot](https://github.com/zhangdaiscott/jeecg-boot)
 
 前言：
 -----------------------------------
@@ -93,7 +93,7 @@ JEECG 功能特点
 技术文档
 -----------------------------------
 * [在线演示](http://demo.jeecg.org)
-* [JEECG 入门开发环境搭建](https://blog.csdn.net/zhangdaiscott/article/details/50915206)
+* [JEECG 入门开发环境搭建](http://jeecg3.mydoc.io/?t=28600)
 * [JEECG 在线开发文档](http://jeecg3.mydoc.io)
 * [JEECG 常见问题贴](http://www.jeecg.org/forum.php?mod=viewthread&tid=1830&extra=page%3D1)
 * [JEECG 本地maven仓库下载](https://gitee.com/jeecg/jeecg-local-maven)
