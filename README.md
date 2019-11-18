@@ -1,3 +1,8 @@
+2019年度最受欢迎中国开源软件评选
+请给JeecgBoot 投票，谢谢支持。
+https://www.oschina.net/p/jeecg-boot
+
+
 
 ![JEECG](https://static.oschina.net/uploads/img/201905/24184932_ak9D.png "Jeecg快速开发平台")
 
