@@ -1,5 +1,6 @@
 package org.jeecgframework.web.system.pojo.base;
 
+import com.myjdbc.develop.frontend.datagrid.annotation.DatagridColumn;
 import org.jeecgframework.core.common.entity.IdEntity;
 
 import javax.persistence.*;
@@ -15,8 +16,14 @@ import javax.persistence.*;
 @Entity
 @Table(name = "t_s_user_org")
 public class TSUserOrg extends IdEntity implements java.io.Serializable {
+
+    @DatagridColumn(title = "用户")
     private TSUser tsUser;
+    @DatagridColumn(title = "单位")
     private TSDepart tsDepart;
+
+    @DatagridColumn(title = "用户ID")
+    private String tsUserId;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -36,5 +43,14 @@ public class TSUserOrg extends IdEntity implements java.io.Serializable {
 
     public void setTsDepart(TSDepart tsDepart) {
         this.tsDepart = tsDepart;
+    }
+
+    @Transient
+    public String getTsUserId() {
+        return tsUserId;
+    }
+
+    public void setTsUserId(String tsUserId) {
+        this.tsUserId = tsUserId;
     }
 }

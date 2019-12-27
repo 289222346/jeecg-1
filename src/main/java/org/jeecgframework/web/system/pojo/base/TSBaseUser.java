@@ -1,5 +1,6 @@
 package org.jeecgframework.web.system.pojo.base;
 
+import com.myjdbc.develop.frontend.datagrid.annotation.DatagridColumn;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.jeecgframework.core.common.entity.IdEntity;
 import org.jeecgframework.poi.excel.annotation.Excel;
@@ -19,13 +20,21 @@ import java.util.List;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class TSBaseUser extends IdEntity implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
+
+	@DatagridColumn(title = "用户名")
 	@Excel(name = "用户名",width = 15)
 	private String userName;// 用户名
+
+	@DatagridColumn(title = "真实姓名")
 	@Excel(name = "真实姓名",width = 15)
 	private String realName;// 真实姓名
 	private String browser;// 用户使用浏览器类型
+
+	@DatagridColumn(title = "角色编码")
 	@Excel(name = "角色编码(多个角色编码用逗号分隔，非必填)",width =50)
 	private String userKey;// 用户验证唯一标示
+
+	@DatagridColumn(title = "用户密码")
 	private String password;//用户密码
 	private Short activitiSync;//是否同步工作流引擎
 	/*@Excel(name = "状态")*/

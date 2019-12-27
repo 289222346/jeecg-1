@@ -38,11 +38,11 @@
 		<!-- 测试依赖包 -->
 		<junit.version>4.7</junit.version>
         <hamcrest.version>1.3</hamcrest.version>
-        
+
         <!-- 辅助依赖包 -->
 		<jodd.version>3.3.7</jodd.version>
 		<ant.version>1.6.5</ant.version>
-        
+
         <!-- 工具包 -->
         <!-- json start -->
 		<jackson.version>1.8.4</jackson.version>
@@ -263,7 +263,7 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>${druid.version}</version>
-			<scope>runtime</scope>
+			<!--<scope>runtime</scope>-->
 		</dependency>
 		
 		<!--  mysql -->

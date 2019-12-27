@@ -12,6 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.myjdbc.develop.frontend.datagrid.annotation.DatagridColumn;
 import org.codehaus.jackson.map.annotate.JsonDeserialize;
 import org.jeecgframework.core.common.controller.CustomJsonDateDeserializer;
 import org.jeecgframework.core.common.entity.IdEntity;
@@ -25,7 +26,8 @@ import org.jeecgframework.poi.excel.annotation.Excel;
 @Table(name = "t_s_depart")
 public class TSDepart extends IdEntity implements java.io.Serializable {
 	private TSDepart TSPDepart;//上级部门
-	@Excel(name = "部门名称" ,width = 20)
+    @DatagridColumn(title = "部门名称")
+    @Excel(name = "部门名称" ,width = 20)
 	private String departname;//部门名称
 	@Excel(name = "部门描述",width = 20)
 	private String description;//部门描述
@@ -51,12 +53,13 @@ public class TSDepart extends IdEntity implements java.io.Serializable {
 	/**更新人登录名称*/
 	private java.lang.String updateBy;
 	/**更新日期*/
+	@DatagridColumn(title = "更新日期")
 	private java.util.Date updateDate;
 	/**所属部门*/
 	private java.lang.String sysOrgCode;
 	/**所属公司*/
 	private java.lang.String sysCompanyCode;
-	
+
 	private List<TSDepart> TSDeparts = new ArrayList<TSDepart>();//下属部门
 
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -225,7 +228,7 @@ public class TSDepart extends IdEntity implements java.io.Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "TSPDepart")
 	public List<TSDepart> getTSDeparts() {
 		return TSDeparts;
@@ -279,7 +282,7 @@ public class TSDepart extends IdEntity implements java.io.Serializable {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+
 	@Column(name="depart_order")
 	public String getDepartOrder() {
 		return departOrder;
@@ -288,7 +291,7 @@ public class TSDepart extends IdEntity implements java.io.Serializable {
 	public void setDepartOrder(String departOrder) {
 		this.departOrder = departOrder;
 	}
-	
-	
-	
+
+
+
 }

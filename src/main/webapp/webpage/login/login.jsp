@@ -67,7 +67,7 @@
 				</div>
                   <h4 class="header blue lighter bigger">
                     <i class="ace-icon fa fa-coffee green"></i>
-                	    用户登录
+                	    用户登录1
                   </h4>
                   <div class="space-6"></div>
                       <label class="block clearfix">
@@ -117,7 +117,8 @@
                 </form>
               </div>
             </div>
-            <div class="center"><h4 class="blue" id="id-company-text">&copy; JEECG版权所有 v_4.0</h4></div>
+            <div style="text-align: center"><a href="http://www.beian.miit.gov.cn"> 粤ICP备-18153023号</a></div>
+            <%--<div class="center"><h4 class="blue" id="id-company-text">&copy; JEECG版权所有 v_4.0</h4></div>--%>
             <div class="navbar-fixed-top align-right">
               <br />
               &nbsp;
