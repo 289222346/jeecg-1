@@ -1,6 +1,5 @@
 package com.myjdbc.core.util;
 
-import com.myjdbc.jdbc.annotation.Dictionary;
 import org.apache.commons.lang.Validate;
 
 import javax.persistence.MappedSuperclass;

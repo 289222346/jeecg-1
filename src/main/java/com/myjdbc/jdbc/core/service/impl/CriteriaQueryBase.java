@@ -1,6 +1,5 @@
 package com.myjdbc.jdbc.core.service.impl;
 
-import com.myjdbc.core.util.ClassUtil;
 import com.myjdbc.jdbc.constants.OrderType;
 import com.myjdbc.jdbc.core.bo.Criteria;
 import com.myjdbc.jdbc.core.bo.Criterion;

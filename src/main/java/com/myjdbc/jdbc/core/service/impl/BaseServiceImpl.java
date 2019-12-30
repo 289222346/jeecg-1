@@ -13,7 +13,6 @@ import com.myjdbc.jdbc.core.service.CriteriaQuery;
 import com.myjdbc.jdbc.core.sqlgenerator.SqlGenerator;
 import com.myjdbc.jdbc.pool.DBUtil;
 import com.myjdbc.jdbc.util.BeanUtil;
-import org.apache.poi.ss.formula.functions.T;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

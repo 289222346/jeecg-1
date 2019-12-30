@@ -12,8 +12,6 @@ import com.myjdbc.jdbc.core.sqlgenerator.SqlGenerator;
 import com.myjdbc.jdbc.util.BeanUtil;
 import com.myjdbc.jdbc.util.BeanUtilOracle;
 import com.myjdbc.jdbc.util.UUIDHexGenerator;
-import com.sun.xml.internal.bind.v2.model.core.ID;
-import org.apache.poi.ss.formula.functions.T;
 
 import javax.persistence.*;
 import java.lang.annotation.Annotation;
