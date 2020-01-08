@@ -1,6 +1,6 @@
 package org.jeecgframework.web.system.pojo.base;
 
-import com.myjdbc.develop.frontend.datagrid.annotation.DatagridColumn;
+import com.myjdbc.datagrid.annotation.DatagridColumn;
 import org.jeecgframework.core.common.entity.IdEntity;
 
 import javax.persistence.*;

@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
-import com.myjdbc.develop.frontend.datagrid.annotation.DatagridColumn;
+import com.myjdbc.datagrid.annotation.DatagridColumn;
 import org.hibernate.annotations.GenericGenerator;
 
 @MappedSuperclass

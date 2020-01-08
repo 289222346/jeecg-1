@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.myjdbc.develop.frontend.datagrid.annotation.DatagridColumn;
+import com.myjdbc.datagrid.annotation.DatagridColumn;
 import org.codehaus.jackson.map.annotate.JsonDeserialize;
 import org.jeecgframework.core.common.controller.CustomJsonDateDeserializer;
 import org.jeecgframework.core.common.entity.IdEntity;
